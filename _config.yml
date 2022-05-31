@@ -22,7 +22,7 @@
 email: femoldark@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   "FE - Moldark" is a site dedicated to documenting the recreation of a Fire Emblem game in the style of the older GBA series. Code is 100% unqiue and written by me, the project sits at well over 15,000 lines of code to date. All graphics are custom as well, as is the plot of course. Code written in Python v2.7 using Pygame.
-baseurl: "/dev" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  fe-moldark
 

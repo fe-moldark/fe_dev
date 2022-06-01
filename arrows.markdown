@@ -74,14 +74,67 @@ def arrows(runPath,newSpot,free_space_list):#runPath
                 runPath.append((item[1],item[0]))
     arrows.runPath=runPath
  
- ```
+```
 <br>
 When blitting the arrows themselves it uses the following tiles:
 <img src="/assets/arrows_img.png" alt="">
 <br>
 Each is oriented their own way - connect east to west, turns north to east, etc.
 
-When it comes time to blit the arrows themselves it goes through the following process:
+When it comes time to blit the arrows themselves it has to go through a seperate function. It goes through each location in the runPath and relates each pos to the previous and next spot to create the arrow map you saw in the above video. Full code:
 
+```python
+def showArrows():
+    if ShowMap is True:
+        iis=0
+        if displayTrade is False and displayInventory is False:
+            for run in runPath:
+                if iis != 0 and iis < len(runPath)-1:
+                    thisSpot=(run[1]-array_addx,run[0]-array_addy)#as x,y
 
+                    if runPath[iis-1][1] > runPath[iis][1]:
+                        if runPath[iis+1][1] < runPath[iis][1]:
+                            thisArrow=arrowleftright
+                        elif runPath[iis+1][0] > runPath[iis][0]:
+                            thisArrow=arrowbottomright
+                        elif runPath[iis+1][0] < runPath[iis][0]:
+                            thisArrow=arrowtopright  
+                    elif runPath[iis-1][1] < runPath[iis][1]:
+                        if runPath[iis+1][1] > runPath[iis][1]:
+                            thisArrow=arrowleftright
+                        elif runPath[iis+1][0] > runPath[iis][0]:
+                            thisArrow=arrowbottomleft
+                        elif runPath[iis+1][0] < runPath[iis][0]:
+                            thisArrow=arrowtopleft
+                    elif runPath[iis-1][0] < runPath[iis][0]:
+                        if runPath[iis+1][1] < runPath[iis][1]:
+                            thisArrow=arrowtopleft
+                        elif runPath[iis+1][1] > runPath[iis][1]:
+                            thisArrow=arrowtopright
+                        elif runPath[iis+1][0] > runPath[iis][0]:
+                            thisArrow=arrowtopbottom
+                    elif runPath[iis-1][0] > runPath[iis][0]:
+                        if runPath[iis+1][1] < runPath[iis][1]:
+                            thisArrow=arrowbottomleft
+                        elif runPath[iis+1][1] > runPath[iis][1]:
+                            thisArrow=arrowbottomright
+                        elif runPath[iis+1][0] < runPath[iis][0]:
+                            thisArrow=arrowtopbottom
 
+                    screen.blit(thisArrow,(thisSpot[0]*tilesize,thisSpot[1]*tilesize))
+
+                if iis == len(runPath)-1 and iis != 0:
+                    
+                    thisSpot=(run[1]-array_addx,run[0]-array_addy)#as x,y
+                    
+                    if runPath[iis-1][1] > runPath[iis][1]:
+                        thisArrow=arrowtipw
+                    elif runPath[iis-1][1] < runPath[iis][1]:
+                        thisArrow=arrowtipe
+                    elif runPath[iis-1][0] < runPath[iis][0]:
+                        thisArrow=arrowtips
+                    elif runPath[iis-1][0] > runPath[iis][0]:
+                        thisArrow=arrowtipn
+                    screen.blit(thisArrow,(thisSpot[0]*tilesize,thisSpot[1]*tilesize))
+                iis+=1
+```

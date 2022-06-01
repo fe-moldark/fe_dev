@@ -77,9 +77,10 @@ def arrows(runPath,newSpot,free_space_list):#runPath
 ```
 <br>
 When blitting the arrows themselves it uses the following tiles:
+<br>
 <img src="/assets/arrows_img.png" alt="">
 <br>
-Each is oriented their own way - connect east to west, turns north to east, etc.
+Each is oriented a different way - some connect east to west, another turns north to east, etc.
 
 When it comes time to blit the arrows themselves it has to go through a seperate function. It goes through each location in the runPath and relates each pos to the previous and next spot to create the arrow map you saw in the above video. Full code:
 

@@ -7,14 +7,20 @@ permalink: /code/show_map
 
 # Creating the move map:
 
-When creating the move map for an individual unit there are more factors to consider than you might think. By default, the level lods in the map at the very beginning and a basic array that is manipulated based off the unit during your turn.
+When creating the move map for an individual unit there are more factors to consider than you might think. By default, the level loads in the map at the very beginning and a basic array that is further manipulated based off the unit during your turn.
 <br>
 Factors that influence the unit's movement include:
+<br>
 -default impassable tiles (think high mountain ranges)
+<br>
 -what type of unit, grounded or flying - ex. flying units can move over water
+<br>
 -enemies limit movement, you can't move through them or land on their location
+<br>
 -if fogOfWar is True, the above statement will need to change
+<br>
 -you need to allow the ability to move through ally spaces, but not able to 
+<br>
 -ensuring any movement past the parameters of the map is dealt with proper error handling
 <br>
 <br>

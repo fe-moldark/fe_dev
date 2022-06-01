@@ -6,11 +6,16 @@ permalink: /code/upcoming
  
  
 # Upcoming:
-
--Adding how I make the characters, along with the .xcf for you to mess around with if you so choose.
+-How the water appears to move in the background, the code behind and the image itself.
 <br>
 <br>
--Will also upload the background texture I made in Gimp. It's used for every background on the preparation phase, in different colors however.
+-How death quotes work for ally characters.
 <br>
 <br>
--And more
+-Adding how I make the characters (graphics-wise), along with the .xcf file for you to mess around with if you so choose.
+<br>
+<br>
+-Will also upload the background texture I made in Gimp. It's used for most backgrounds on the preparation phase, in different colors however.
+<br>
+<br>
+-And more...

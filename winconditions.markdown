@@ -6,11 +6,11 @@ permalink: /code/winconditions
 
 # How Win Conditions works
 
-<span style="text-decoration: underline">So far I have programmed in 5 different ways to win a level:</span>
+<span style="text-decoration: underline">So far I have programmed 5 different ways to win a level:</span>
 
 
 <ol>
-<li><span style="text-decoration: underline">SEIZE</span> a location on the map (think defeating a boss on a throne, then seizing)</li>
+<li><span style="text-decoration: underline">SEIZE</span> a location on the map (think defeating a boss on a throne, then seizing it)</li>
 <li><span style="text-decoration: underline">ROUT</span> (or kill) all enemy units in play.</li>
 <li><span style="text-decoration: underline">KILL</span> a specific enemy unit in play.</li>
 <li><span style="text-decoration: underline">SURVIVE</span> simply means survive x number of turns, think of it as needing to outlast hordes of enemies for only so long. Survive is not handled here for other reasons.</li>
@@ -38,7 +38,7 @@ KILL
 SURVIVE
 (number of turns)
 ```
-Very self explanatory, depending on which win condition is chosen the file is between 1 and 3 lines long. So that is how the file is saved for the chapter. Now for how it is handled within the code - for the initial level load, that same file is loaded into a list named WINCONDITIONS. You can very easily dissect how it confirms if the different win conditions have been met, and this check occurs after every action taken by a friendly OR enemy unit.
+Very self explanatory, depending on which win condition is chosen the file is between 1 and 3 lines long. Now for how it is handled within the code - for the initial level load, that same file is loaded into a list named WINCONDITIONS. You can very easily dissect how it confirms if the different win conditions have been met, and this check occurs after every action taken by a friendly OR enemy unit.
 
 The Seize / Escape conditions work directly from the unit's optionsList, and if selected, it will set that startEnd variable to True.
 The Survive condition is checked when the turn counter increases after the enemy's turn is over and about to transition back to the player.

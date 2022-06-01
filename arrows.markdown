@@ -76,5 +76,12 @@ def arrows(runPath,newSpot,free_space_list):#runPath
  
  ```
 <br>
-Now, when it comes time to blit the arrows themselves it goes through the following process:
+When blitting the arrows themselves it uses the following tiles:
+<img src="/assets/arrows_img.png" alt="">
+<br>
+Each is oriented their own way - connect east to west, turns north to east, etc.
+
+When it comes time to blit the arrows themselves it goes through the following process:
+
+
 

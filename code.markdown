@@ -5,7 +5,7 @@ permalink: /code/
 ---
 
 # Links:
-This page contains links to some subfolders in which I go over some of the code itself and how it works.
+This page contains links to some subfolders in which I go over some snippets of code and how they work.
 <br>
 <br>
 [Creating the move map](/code/show_map)

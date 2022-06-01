@@ -12,18 +12,16 @@ For some visual context's sake, here is how the arrows appear in-game:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZOz9ITXQrGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
-This function is actually separate from the move map itself (which is also a page in "Code"), however it does draw from the free_space_list variable that is generated from a function involved with the move map, called show_map().
+This function is actually separate from the move map itself (which is also a page in "Code"), however it does draw from the free_space_list that is generated from a function involved with the move map, called show_map().
 <br>
 <br>
-Besides being a nice visual for the player, it is also important as it dictates how your unit will move since there may be more than one path to a certain location. This matters when there are unseen traps laid out the ground, or fog of war is activated for the level at which point a unit's move path becomes much more important.
+Besides being a nice visual for the player, it is also important as it dictates how your unit will move since there may be more than one path to a certain location. This matters when there are unseen traps laid out the ground, or when fog of war is activated for the level at which point a unit's move path becomes much more important.
 <br>
 <br>
-If you go from a tile not in the free_space_list (blue squares) to one suddenly back in the free_space_list, it will perform a quick calculation to find the shortest path there. Similarly if you move to another tile that is still with the free_space_list but outside your unit's maximum move, it will recalculate a route for you (since this means they can get there, but not by that route). If you just move the arrow to a new tile, within the free_space_list and under the maximum moves for that unit, it will simply append that next move location to the runPath.
+If you go from a tile not in the free_space_list (blue squares) to one suddenly back in the free_space_list, it will perform a quick calculation to find the shortest path there. Similarly if you move to another tile that is still with the free_space_list but more than your unit's maximum move, it will recalculate a route for you (since this means they can get there, but not by your current route). If you just move the arrow to a new tile, within the free_space_list and under the maximum moves for that unit, it will simply append that next move location to the runPath.
 <br>
 <br>
 To clarify one thing on the code below, when you first select a unit the initial runPath is simply their location. The rest of the code speaks for itself if you can follow python.
-<br>
-<br>
 
 ```python
 def arrows(runPath,newSpot,free_space_list):#runPath
@@ -77,3 +75,6 @@ def arrows(runPath,newSpot,free_space_list):#runPath
     arrows.runPath=runPath
  
  ```
+<br>
+Now, when it comes time to blit the arrows themselves it goes through the following process:
+

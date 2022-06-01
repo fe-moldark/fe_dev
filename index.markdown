@@ -15,6 +15,6 @@ On a fundemental level, the tilemap is already setup in a grid square and the ma
 
 Feel free to browse around - I have or am working on multiple pages to showcase the various functions and features of the game, as well as some of the code I have written for it.
 
-There is no graphics team, programming and design team, gameplay and story departments, etc. It’s basically just me tackling them all best I can on my own, which while it allows me to implement exactly what I want into the game is also takes a good deal of time.
+There is no graphics team, programming and design team, gameplay and story departments, etc. It’s basically just me tackling them all best I can on my own, which while it allows me to implement exactly what I want into the game, it also takes a good deal of time.
 
 Enjoy.

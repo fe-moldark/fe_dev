@@ -25,9 +25,9 @@ Clearly based off this site I love retro games and that doesn't stop at just rec
 <br>
 The reason why I bring this up is because of what I am currently working on. 
 
-Formerly, I always ran and worked on the game on my laptop running Windows, until it occurred to me - how cool would it be to be able to play my own game that I’ve programmed on a console that I‘ve built? Since then I have been (attempting) to migrate all functions of the game into the Linux distribution for the ability to be able to play it on there. Everything from trying to get outdated modules installed, changing the load structure to the linux file system and not my Windows PC, sounds no longer want to load for some reason, etc.
+Formerly, I always ran and worked on the game on my laptop running Windows, until it occurred to me - how cool would it be to be able to play my own game that I’ve programmed on a console that I‘ve built? Since then I have been (attempting) to migrate all functions of the game into a Linux distribution (the default Raspberry Pi OS) for the ability to be able to play it on there. Everything from trying to get outdated modules installed, changing the load structure to the linux file system and not my Windows PC, sounds no longer want to load for some reason, etc.
 
-This will take some heavy modifications- everything from the size of the text to how many tiles fit on the screen will have to be adjusted. I am going from a large laptop screen to an actual „console“ sized screen at just 480x320 dimensions. It will take work. The other issue is now trying to use Python v2.7 on that, as when I tried updating the script to v3.x some modules no longer worked correctly nor did some of the sounds load in correctly.
+This will also take some heavy modifications to the appearance - everything from the size of the text to how many tiles fit on the screen will have to be adjusted. I am going from a large laptop screen to an actual „console“ sized screen at just 480x320 resolution. It will take work. The other issue is now trying to use Python v2.7 on that, as when I tried updating the script to v3.x some modules no longer worked correctly nor did some of the sounds load in correctly.
 
 So, to get the game working on linux (the Raspbian Desktop) I created a similar layout to the wood console it will end up on:
 

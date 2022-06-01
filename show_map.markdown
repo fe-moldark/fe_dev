@@ -57,14 +57,12 @@ free_space_list.append((y1,x1))
 ```
 
 
-This next part is the show_map function that used when creating
-It is also used in when actually showing the map, or blitting the map onto the screen. 
+This next part is the show_map function that is used to create the free_space_list and when actually showing the map, or blitting the map onto the screen. 
 
-The screen has a set number of tiles for the width and height, and it adjusts your screen in response to movement of the arrow keys (soon to be actual buttons). In order for everything to stay sane, I created the array_addx, array_addy variables that tell you how far off from (0,0) you are.
+The screen has a set number of tiles for the width and height, and it adjusts your screen in response to movement of the arrow keys (soon to be actual buttons). In order for the window to adjust, I created the array_addx, array_addy variables that tell you how far off from (0,0) you are.
 <br>
-To better explain, a "normal" map would show tiles x from (0-17) mapwidth and y (0-11), however most maps will easily exceed this size. So, if as you move around the map the screen shifts say 2 tile across and 1 down, your array_addx, array_addy would be (2,1). Now whenever there are any blitting actions or interactions with the game, those two variables are used the default mov_x,mov_y (which are the cursor locations). The cursor locations are always consistent with their actual location, when blitting that main cursor, however, you would acctually subtract the array_add values. Hopefully that makes sense.
 
-
+To better explain, a "normal" map would show tiles x from (0-17) mapwidth and y (0-11) mapheight, however most maps will easily exceed this size. So, if as you move around the map the screen shifts say 2 tile across and 1 down, your array_addx, array_addy would be (2,1). Now whenever there are any blitting actions or interactions with the game, those two variables are used with the default mov_x,mov_y (which are the cursor locations). The cursor locations are always consistent with their actual location (i.e. can and will exceed the 18x12 map display), when blitting that main cursor, however, you would actually end up subtracting the array_add values. Hopefully that makes sense, but I feel like it won't. Here's the function for all of that:
 
 
 

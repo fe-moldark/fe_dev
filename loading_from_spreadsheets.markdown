@@ -63,16 +63,16 @@ class EnemyClass:
         EnemyClass.pic_grey=self.pic_grey
 
 ```
-So for example, me calling an enemy "Brute" into its class from the spreadsheet would appear as:
+So for example, me calling the "Brute" enemy into its class from the spreadsheet would appear as:
 `Brute=EnemyClass(returnClass(1))`
 <br>
-This calls the second line in the spreadsheet (first line is 0, so second line is 1, etc).
+This would call on the second line in the spreadsheet (first line is 0, so second line is 1, etc).
 
 <br>
 ##  Weapons
 For the weapons it is a very similar process. A small subset of the weapons spreadsheet is pictured below:
 <img src="/assets/spreadsheet_weapons.png" alt="">
-So, when it loads up a player it uses the name of whatever items they have and checks them against an allGear list which contains all weapons, staves, items, and usable items (bonuses to stats and things like master seals).
+So, when it loads up a player it uses the name of whatever items they have and checks them against an allGear list which contains all weapons, staves, items, and usable items (which are stats boosters and things like master seals).
 ```python
 def returnItem(name):#
     for item in allGear:

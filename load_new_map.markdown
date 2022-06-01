@@ -13,4 +13,4 @@ This is obviously a very core function and one that takes a lot of work. Similar
 Suffice to say, it is quite a lot of code - over 1,100 lines of it to be precise. If you want to skim through the code yourself I wil link that file down below. It's actually one of the better documented parts of this program (for obvious reasons), so following it should not prove to be too difficult. Interesting fact, as this function is ~1,100 lines long it alone makes up over 7% of the entire code for the program. That's a lot for just one function, but thankfully it is only called whenever a new level is loaded, and it is quicker than you think.
 <br>
 <br>
-Here is the file if you wish to download: [link](https://github.com/fe-moldark/fe_dev/blob/main/_downloads/load_new_map.py)
+Here is the file if you wish to view or download: [link](https://github.com/fe-moldark/fe_dev/blob/main/_downloads/load_new_map.py)

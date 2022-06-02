@@ -36,6 +36,11 @@ theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+  
+analytics:
+  		provider: "google-universal"
+  	google:
+ 	tracking_id: "G-BCMY82GELL"
 
 
 #defaults:

@@ -17,7 +17,8 @@ Since then, I have added a hundred other features and abilities, heavily updated
 <img src="/assets/chapter config.png" alt="">
 <img src="/assets/trade chapter config.png" alt="">
 <img src="/assets/armory.png" alt="">
-
+<br>
+<br>
 ## Where this project is going
 Clearly based off this site I love retro games and that doesn't stop at just recreating one. I've also made my own console out of wood as you can see below, which normally runs Retropie:
 <img src="/assets/retropie_front.png" alt="">

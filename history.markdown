@@ -11,7 +11,8 @@ This game has gone through multiple overhauls, mainly when I realized a certain 
 <img src="/assets/oldVersionScreenshot.png" alt="">
 
 Since then, I have added a hundred other features and abilities, heavily updated the graphics, and the code itself has exponentially grown and evolved as a result. This is what it looks like now:
-
+<br>
+<br>
 ## Screenshots
 <img src="/assets/current_map.png" alt="">
 <img src="/assets/chapter config.png" alt="">

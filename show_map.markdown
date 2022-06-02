@@ -9,6 +9,7 @@ permalink: /code/show_map
 
 When creating the move map for an individual unit there are more factors to consider than you might think. By default, the level loads in the map at the very beginning and a basic array that is further manipulated based off the unit during your turn.
 <br>
+<br>
 Factors that influence the unit's movement include:
 <br>
 -default impassable tiles (think high mountain ranges)

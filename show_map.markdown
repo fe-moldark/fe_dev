@@ -20,7 +20,7 @@ Factors that influence the unit's movement include:
 <br>
 -if fogOfWar is True, the above statement will need to change
 <br>
--you need to allow the ability to move through ally spaces, but not able to 
+-you need to allow the ability to move through ally spaces, but not able to land on their space
 <br>
 -ensuring any movement past the parameters of the map is dealt with proper error handling
 <br>

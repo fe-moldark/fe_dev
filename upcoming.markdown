@@ -18,4 +18,10 @@ permalink: /code/upcoming
 -Will also upload the background texture I made in Gimp. It's used for most backgrounds on the preparation phase, in different colors however.
 <br>
 <br>
+-How the enemy attack map works (pressing the 'x' button)
+<br>
+<br>
+-Using items like vulneraries and stat-boosting items (akin to 'dragonshields' or 'speedwings')
+<br>
+<br>
 -And more...

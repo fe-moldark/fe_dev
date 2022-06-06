@@ -61,7 +61,7 @@ if MyTurn is True or TheirTurn is True:
     if WINCONDITIONS[0]=="KILL":
         checkForThere=False
         for enemy in enemy_sprites_no_edit:
-            if str(enemy.name) == str(WINCONDITIONS[1]):#WINCONDITIONS[1] is enemy-to-kill name
+            if str(enemy.name) == str(WINCONDITIONS[1]) and enemy.hppart<=0:#WINCONDITIONS[1] is enemy-to-kill name
                 checkForThere=True
                 break
         if checkForThere is False:

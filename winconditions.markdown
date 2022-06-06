@@ -4,7 +4,7 @@ title: Win Conditions
 permalink: /code/winconditions
 ---
 
-# How Win Conditions works
+# How Win Conditions work
 
 <span style="text-decoration: underline">So far I have programmed 5 different ways to win a level:</span>
 

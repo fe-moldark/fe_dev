@@ -10,6 +10,6 @@ The code currently stands at 15,000 lines of code, a challenge to keep up with f
 
 On a fundemental level, the tilemap is already setup in a grid, and the map is loaded into multiple arrays to display on the screen and to control / limit player movement. That would be the core of what the games works off of, the rest of this site will go into more details about how the rest of it comes together. There is no graphics team, programming and design team, gameplay and story departments, etc. It’s basically just me tackling them all as best I can on my own, which while it allows me to implement exactly what I want into the game, it also takes a good deal more time.
 
-Feel free to browse around - I have already made and am working on multiple pages to showcase the various functions and features of the game, as well as some snippets of code where I explain how they work.
+Feel free to browse around - I have already made and am working on multiple pages to showcase the various functions and features of the game, as well as some snippets of code where I break down how they work.
 
 Enjoy.

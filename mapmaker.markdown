@@ -4,7 +4,7 @@ title: Map Maker Page
 permalink: /mapmaker/
 ---
 
-# MapMaker
+# Map Maker
 
 When I first started making a map for the game it was very simple and more or less used for testing functions and how the map affected movement, etc. Once I started creating multiple maps for different levels, however, it became apparent I needed an easier way to create maps which led to this side project.
 

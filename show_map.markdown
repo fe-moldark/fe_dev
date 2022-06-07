@@ -75,7 +75,7 @@ def show_map(y, z,who):
     pls_count_this=0
     if fogOfWar is False:
         for item in enemy_sprites_no_edit:
-            grid[item.y][item.x] = 1 #make enemy units APPEAR as NOT blocked / occupied squares in array
+            grid[item.y][item.x] = 1 #
             pls_count_this+=1
     else:#fog of war is true
         fogFreeList=[]

@@ -1,0 +1,21 @@
+First Off-
+Look into making a search  / rummage option for randomized tiles on certain chapters. Would be similar to what sacred stones and PoR has in the sand chapters.
+Initial thought process:
+
+Save into text file as SEARCHABLE.txt:
+line1 = True / False (whether or not there is loot for this mission)
+line2 = If True, a number here - from there would index the array of moveable spaces on the map and randomly assign weapons / items based off the player's progression
+
+-Alternatively-
+line1 = same
+line2 = specific weapon name that will randomly load to map
+line3 = same as line2, repeat as desired
+--> Offers better control for the map specifically, but also more work and less randomization (for weapons / gear, not location)
+
+**Look into Sacred stones version where items are found in a set of tile locations? More in line with the game, but would require more code
+
+
+Secondly-
+Did I already add the ability for my thieves to pick doors and chests? Need to check on that, and add as 'pick' option instead of "Door" / "Chest". Otherwise may default to using a chest / door key already in a thieve's possession.
+
+Thirdly -

@@ -4,6 +4,21 @@ title: Welcome
 #permalink: /welcome/
 ---
 
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+	  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BCMY82GELL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BCMY82GELL');
+    </script>
+  </head>
+</html>
+
 Welcome to FE Moldark, a website dedicated to documenting the complete recreation of the Fire Emblem game - everything from the graphics, a custom storyline and the various functions involved. FE Moldark is written entirely in Python v2.7, an old version of Python, yes, however this project began over 7 years ago and has been periodically worked on since. The code is completely original and throughout this site (and my youtube channel) I go into how different parts of it work.
 
 The code currently stands at 15,000 lines, a challenge to keep up with for sure. For those familiar with the Fire Emblem series this is because I am attempting to incorporate functions from every aspect of the game; opening doors and chests, healing and warping staffs, including a convoy screen and adjustable map before going into battle, trading items, armory and vendors, recruitable units, there are a million different aspects already involved and a million more to go. One major accomplishment is the loading screen, sounds simple, I know. Now you are able to not just load a chapter and play with those units, but successively update into save files as well as the ability to save mid-game (think the "suspend" option for those familiar).

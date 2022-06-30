@@ -24,4 +24,7 @@ permalink: /code/upcoming
 -Using items like vulneraries and stat-boosting items (akin to 'dragonshields' or 'speedwings')
 <br>
 <br>
+-Weapons / staves "breaking"
+<br>
+<br>
 -And more...

@@ -92,7 +92,8 @@ def showArrows():
             for run in runPath:
                 if iis != 0 and iis < len(runPath)-1:
                     thisSpot=(run[1]-array_addx,run[0]-array_addy)#as x,y
-
+                    
+                    #is there a cleaner way to run this? yes. am I going to break what's already working? not right now.
                     if runPath[iis-1][1] > runPath[iis][1]:
                         if runPath[iis+1][1] < runPath[iis][1]:
                             thisArrow=arrowleftright

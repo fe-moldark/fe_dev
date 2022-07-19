@@ -45,7 +45,7 @@ class EnemyClass:
         pic=theList[4]
         pic_grey=theList[5]
         actualName=theList[6]
-#some of this redundant, I know
+#some of this is redundant, I know
         self.name=name
         self.actualName=actualName
         self.WeaponTypes=WeaponTypes
